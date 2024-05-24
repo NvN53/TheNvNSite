@@ -73,7 +73,27 @@
             height: 360px;/*the height of the image */
             display: block; /* Remove any default spacing */
             margin-left: -28%; /* Adjust padding to move the image to the right */
-	    margin-top: -45%;
+	        margin-top: -45%;
+        }
+        /* Media query for small screens */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px; /* Reduce padding on small screens */
+            }
+            h1 {
+                font-size: 1.5em; /* Reduce font size on small screens */
+            }
+            h2 {
+                font-size: 1.2em; /* Reduce font size on small screens */
+            }
+            .circle {
+                width: 100px; /* Reduce circle size on small screens */
+                height: 100px; /* Reduce circle size on small screens */
+            }
+            .circle img {
+                width: 120px; /* Ensure image size matches circle */
+                height: 150px; /* Ensure image size matches circle */
+            }
         }
     </style>
 </head>
