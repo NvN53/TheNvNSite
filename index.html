@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevin K Sunil</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #001f3f, #000428); /* Navy blue gradient */
+            position: relative;
+            overflow: hidden;
+        }
+        .rectangle {
+            position: absolute;
+            width: 30px;
+            background-color: rgba(255, 255, 255, 0.6); /* Default color with opacity */
+            transform: rotate(45deg); /* Rotate to form diagonal grid */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Box shadow */
+        }
+        .rectangle:nth-child(odd) { background-color: #ff6f61; } /* Red */
+        .rectangle:nth-child(even) { background-color: #1e90ff; } /* Dodger Blue */
+        .rectangle:nth-child(3n) { background-color: #00ff7f; } /* Spring Green */
+        .rectangle:nth-child(4n) { background-color: #ff1493; } /* Deep Pink */
+        .rectangle:nth-child(5n) { background-color: #8a2be2; } /* Blue Violet */
+        .container {
+            background-color: #ebebeb; /* Light gray background color */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 80vh; /* Set width and height to be the same for a square */
+            height: 80vh; /* Set width and height to be the same for a square */
+            padding: 40px; /* Adjust padding for better spacing */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+            box-sizing: border-box; /* Ensure padding is included in the total width and height */
+            z-index: 1;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2em;
+        }
+        h2 {
+            text-align: left;
+            color: #555;
+            font-size: 1.5em;
+            margin-top: 0;
+	    margin-top: 36%;
+        }
+        p {
+            color: #666;
+            font-size: 1em;
+            line-height: 1.6;
+            margin: 20px 0; /* Added top and bottom margin */
+        }
+        .circle {
+            width: 170px; /* Diameter of the circle */
+            height: 170px; /* Diameter of the circle */
+            background-color: #fff; /* Background color of the circle */
+            border-radius: 50%; /* Make it a circle */
+            position: absolute; /* Position it absolutely */
+            bottom: 460px; /* Position it relative to the container */
+            left: calc(50% - 83px); /* Center it horizontally */
+            overflow: hidden; /* Clip any content outside the circle */
+        }
+        .circle img {
+            width: 270px; /* Set the width of the image */
+            height: 360px;/*the height of the image */
+            display: block; /* Remove any default spacing */
+            margin-left: -28%; /* Adjust padding to move the image to the right */
+	    margin-top: -45%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Rectangles forming the background pattern -->
+    <div class="rectangle" style="height: 150px; top: 5%; left: 5%;"></div>
+    <div class="rectangle" style="height: 200px; top: 5%; left: 20%;"></div>
+    <div class="rectangle" style="height: 250px; top: 15%; left: 35%;"></div>
+    <div class="rectangle" style="height: 300px; top: 15%; left: 50%;"></div>
+    <div class="rectangle" style="height: 150px; top: 25%; left: 65%;"></div>
+    <div class="rectangle" style="height: 200px; top: 25%; left: 80%;"></div>
+    <div class="rectangle" style="height: 250px; top: 35%; left: 5%;"></div>
+    <div class="rectangle" style="height: 300px; top: 35%; left: 20%;"></div>
+    <div class="rectangle" style="height: 150px; top: 45%; left: 35%;"></div>
+    <div class="rectangle" style="height: 200px; top: 45%; left: 50%;"></div>
+    <div class="rectangle" style="height: 250px; top: 55%; left: 65%;"></div>
+    <div class="rectangle" style="height: 300px; top: 55%; left: 80%;"></div>
+    <div class="rectangle" style="height: 150px; top: 65%; left: 5%;"></div>
+    <div class="rectangle" style="height: 200px; top: 65%; left: 20%;"></div>
+    <div class="rectangle" style="height: 250px; top: 75%; left: 35%;"></div>
+    <div class="rectangle" style="height: 300px; top: 75%; left: 50%;"></div>
+    <div class="rectangle" style="height: 150px; top: 85%; left: 65%;"></div>
+    <div class="rectangle" style="height: 200px; top: 85%; left: 80%;"></div>
+    <div class="rectangle" style="height: 250px; top: 5%; left: 50%;"></div>
+    <div class="rectangle" style="height: 300px; top: 15%; left: 65%;"></div>
+    <div class="rectangle" style="height: 150px; top: -10%; left: 70%;"></div>
+    <div class="rectangle" style="height: 200px; top: -20%; left: 400%;"></div>
+    <div class="rectangle" style="height: 200px; top: 35%; left: 5%;"></div>
+    <div class="rectangle" style="height: 250px; top: 45%; left: 20%;"></div>
+    <div class="rectangle" style="height: 300px; top: 55%; left: 35%;"></div>
+    <div class="rectangle" style="height: 150px; top: 65%; left: 50%;"></div>
+    <div class="rectangle" style="height: 200px; top: 75%; left: 65%;"></div>
+    <div class="rectangle" style="height: 250px; top: 85%; left: 80%;"></div>
+    <div class="rectangle" style="height: 300px; top: 25%; left: 35%;"></div>
+    <div class="rectangle" style="height: 150px; top: 35%; left: 50%;"></div>
+    <div class="rectangle" style="height: 200px; top: 45%; left: 65%;"></div>
+    <div class="rectangle" style="height: 150px; top: 5%; left: 95%;"></div>
+    <div class="rectangle" style="height: 200px; top: 25%; left: 95%;"></div>
+    <div class="rectangle" style="height: 250px; top: 45%; left: 95%;"></div>
+    <div class="rectangle" style="height: 300px; top: 65%; left: 95%;"></div>
+    <div class="rectangle" style="height: 150px; top: 85%; left: 95%;"></div>
+    <div class="rectangle" style="height: 200px; top: 5%; left: 90%;"></div>
+    <div class="rectangle" style="height: 150px; top: -1%; left: 80%;"></div>
+    <!-- Rectangles forming the background pattern -->
+    <div class="rectangle" style="height: 200px; top: 85%; left: 7%;"></div>
+    <div class="rectangle" style="height: 158px; top: 90%; left: 15%;"></div>
+    <div class="rectangle" style="height: 220px; top: 95%; left: 23%;"></div>
+    <div class="rectangle" style="height: 100px; top: -5%; left: 20%;"></div>
+    <div class="rectangle" style="height: 100px; top: -9%; left: 40%;"></div>
+    <div class="rectangle" style="height: 100px; top: -3%; left: 60%;"></div>
+    <div class="rectangle" style="height: 100px; top: -1%; left: 80%;"></div>
+    <div class="container">
+        <h1>Nevin K Sunil</h1>
+        <div class="circle">
+            <img src="IMG-20240511-WA0031.jpg" alt="Your Image">
+        </div>
+        <h2>About me</h2>
+        <p>
+            Hi, I'm Nevin K Sunil, an Electronics and Communication Engineering student who is interested in making websites. This is my first website and I'm using ChatGPT to build it.
+        </p>
+    </div>
+</body>
+</html>
